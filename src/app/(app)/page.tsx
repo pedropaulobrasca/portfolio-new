@@ -82,7 +82,7 @@ export default function Home() {
                 animate={controls}
               >
                 {selected === 'Sobre' && <About />}
-                {selected === 'Projetos' && '<Projects />'}
+                {selected === 'Projetos' && 'Em breve...'}
                 {selected === 'Contato' && '<Contact />'}
               </motion.div>
             </ButtonShapeTabs>
