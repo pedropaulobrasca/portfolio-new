@@ -7,6 +7,7 @@ import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
 
 import ButtonShapeTabs from '@/components/button-shape-tabs'
 import { About } from '@/components/pages/about'
+import { Contact } from '@/components/pages/contact'
 import { TextFlip } from '@/components/text-flip'
 
 export default function Home() {
@@ -83,7 +84,7 @@ export default function Home() {
               >
                 {selected === 'Sobre' && <About />}
                 {selected === 'Projetos' && 'Em breve...'}
-                {selected === 'Contato' && '<Contact />'}
+                {selected === 'Contato' && <Contact />}
               </motion.div>
             </ButtonShapeTabs>
           </div>
