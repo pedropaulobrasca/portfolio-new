@@ -24,7 +24,7 @@ const logos = [
   },
 ]
 
-export default function LogoScroll() {
+export function LogoScroll() {
   return (
     <div className="w-full">
       <div className="mx-auto w-full px-4 md:px-8">

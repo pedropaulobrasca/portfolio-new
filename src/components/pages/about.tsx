@@ -1,5 +1,5 @@
-import ExperienceTimeline from '../ui/experience-timeline'
-import LogoScroll from '../ui/logo-scroll'
+import { ExperienceTimeline } from '../ui/experience-timeline'
+import { LogoScroll } from '../ui/logo-scroll'
 
 export function About() {
   return (

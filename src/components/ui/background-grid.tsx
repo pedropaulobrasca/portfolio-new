@@ -1,6 +1,6 @@
 import { cn } from '@/lib/utils'
 
-export default function BackgroundGrid({
+export function BackgroundGrid({
   color = 'black',
   size = '15px',
   strokeWidth = '1px',

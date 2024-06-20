@@ -1,4 +1,4 @@
-export default function ExperienceTimeline() {
+export function ExperienceTimeline() {
   return (
     <ol className="relative border-s border-emerald-200">
       <li className="mb-10 ms-4">

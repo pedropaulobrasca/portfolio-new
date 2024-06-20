@@ -3,7 +3,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 
-import BackgroundGrid from '@/components/ui/background-grid'
+import { BackgroundGrid } from '@/components/ui/background-grid'
 
 const inter = Inter({ subsets: ['latin'] })
 

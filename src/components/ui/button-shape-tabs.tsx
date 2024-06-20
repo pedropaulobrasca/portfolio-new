@@ -37,7 +37,7 @@ interface ButtonShapeTabsProps {
   onTabChange: (selectedTab: string) => void
 }
 
-const ButtonShapeTabs = ({
+export const ButtonShapeTabs = ({
   tabs,
   children,
   onTabChange,
@@ -65,5 +65,3 @@ const ButtonShapeTabs = ({
     </div>
   )
 }
-
-export default ButtonShapeTabs

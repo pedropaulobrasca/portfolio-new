@@ -6,8 +6,8 @@ import { useEffect, useState } from 'react'
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
 
 import { About } from '@/components/pages/about'
-import { Contact } from '@/components/pages/contact'
-import ButtonShapeTabs from '@/components/ui/button-shape-tabs'
+import { Contact } from '@/components/pages/contact/contact'
+import { ButtonShapeTabs } from '@/components/ui/button-shape-tabs'
 import { TextFlip } from '@/components/ui/text-flip'
 
 export default function Home() {
