@@ -1,9 +1,9 @@
 import Image from 'next/image'
 
-import NextjsIcon from '../assets/nextjs-logo.svg'
-import NodejsIcon from '../assets/nodejs-logo.svg'
-import ReactIcon from '../assets/react-logo.svg'
-import TypeScriptIcon from '../assets/typescript-logo.svg'
+import NextjsIcon from '@/assets/nextjs-logo.svg'
+import NodejsIcon from '@/assets/nodejs-logo.svg'
+import ReactIcon from '@/assets/react-logo.svg'
+import TypeScriptIcon from '@/assets/typescript-logo.svg'
 
 const logos = [
   {
@@ -26,7 +26,7 @@ const logos = [
 
 export default function LogoScroll() {
   return (
-    <div className="w-full py-12">
+    <div className="w-full">
       <div className="mx-auto w-full px-4 md:px-8">
         <div className="group relative mt-6 flex gap-6 overflow-hidden p-2">
           {Array(5)

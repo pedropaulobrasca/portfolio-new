@@ -5,10 +5,10 @@ import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
 
-import ButtonShapeTabs from '@/components/button-shape-tabs'
 import { About } from '@/components/pages/about'
 import { Contact } from '@/components/pages/contact'
-import { TextFlip } from '@/components/text-flip'
+import ButtonShapeTabs from '@/components/ui/button-shape-tabs'
+import { TextFlip } from '@/components/ui/text-flip'
 
 export default function Home() {
   const controls = useAnimationControls()
