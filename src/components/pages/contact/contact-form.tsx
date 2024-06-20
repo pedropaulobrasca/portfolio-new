@@ -74,7 +74,7 @@ export function ContactForm() {
           disabled={isSubmitting} // Disable the button while submitting
         >
           {isSubmitting ? (
-            <div className="animate-spin size-5 rounded-full border-4 border-gray-200 border-t-red-500" />
+            <div className="size-5 animate-spin rounded-full border-4 border-gray-200 border-t-red-500" />
           ) : (
             'Enviar'
           )}
