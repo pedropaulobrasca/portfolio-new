@@ -24,14 +24,14 @@ export async function POST(request: NextRequest) {
       port: 587,
       secure: false,
       auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS,
+        user: process.env.SMTP_USER,
+        pass: process.env.SMTP_PASS,
       },
     })
 
     const mailOptions = {
       from: email,
-      to: process.env.EMAIL_USER,
+      to: 'pedropaulobrasca@gmail.com',
       subject: `Email from ${name} (${email}): ${subject}`,
       text,
     }
