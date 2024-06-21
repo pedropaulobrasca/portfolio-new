@@ -75,19 +75,17 @@ export default function Home() {
             </div>
           </div>
           <div className="my-8 w-full border-b" />
-          <div>
-            <ButtonShapeTabs tabs={tabs} onTabChange={handleTabChange}>
-              <motion.div
-                id="motion-container"
-                className="h-full w-full"
-                animate={controls}
-              >
-                {selected === 'Sobre' && <About />}
-                {selected === 'Projetos' && 'Em breve...'}
-                {selected === 'Contato' && <Contact />}
-              </motion.div>
-            </ButtonShapeTabs>
-          </div>
+          <ButtonShapeTabs tabs={tabs} onTabChange={handleTabChange}>
+            <motion.div
+              id="motion-container"
+              className="h-full w-full"
+              animate={controls}
+            >
+              {selected === 'Sobre' && <About />}
+              {selected === 'Projetos' && 'Em breve...'}
+              {selected === 'Contato' && <Contact />}
+            </motion.div>
+          </ButtonShapeTabs>
         </div>
       </main>
     </div>

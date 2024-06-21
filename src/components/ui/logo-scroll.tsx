@@ -7,18 +7,22 @@ import TypeScriptIcon from '@/assets/typescript-logo.svg'
 
 const logos = [
   {
+    id: 1,
     name: 'Nextjs',
     svg: NextjsIcon,
   },
   {
+    id: 2,
     name: 'React',
     svg: ReactIcon,
   },
   {
+    id: 3,
     name: 'Nodejs',
     svg: NodejsIcon,
   },
   {
+    id: 4,
     name: 'TypeScript',
     svg: TypeScriptIcon,
   },
@@ -31,16 +35,19 @@ export function LogoScroll() {
         <div className="group relative mt-6 flex gap-6 overflow-hidden p-2">
           {Array(5)
             .fill(null)
-            .map((index) => (
+            .map((_, index) => (
               <div
                 key={index}
                 className="animate-logo-cloud flex shrink-0 flex-row justify-around gap-6"
               >
-                {logos.map((logo, key) => (
-                  <div key={key} className="flex items-center justify-center">
+                {logos.map((logo) => (
+                  <div
+                    key={logo.id}
+                    className="flex items-center justify-center"
+                  >
                     <Image
                       src={logo.svg}
-                      alt="Nodejs"
+                      alt={logo.name}
                       className="text-brand dark:text-brand-dark h-18 w-10 fill-current"
                     />
                   </div>
