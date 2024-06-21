@@ -38,7 +38,7 @@ export function LogoScroll() {
             .map((_, index) => (
               <div
                 key={index}
-                className="animate-logo-cloud flex shrink-0 flex-row justify-around gap-6"
+                className="flex shrink-0 animate-logo-cloud flex-row justify-around gap-6"
               >
                 {logos.map((logo) => (
                   <div
